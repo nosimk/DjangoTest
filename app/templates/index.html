@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Add a Person{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" STYLE="margin-top: 150px;">
+        <h2>ADD A PERSON:</h2>
+        <form action="" method="POST" enctype="multipart/form-data">
+    {{ form }}
+    {% csrf_token %}
+             <button type="submit">SUBMIT</button>
+</form>
+
+    </div>
+    <div class="col-md-3"></div>
+</div>
+{% endblock %}
